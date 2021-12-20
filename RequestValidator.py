@@ -20,20 +20,3 @@ class RequestValidator:
     def fail_increment(self, request, log):
         request.set_log(log)
         request.set_status(-1)
-
-
-        # self.redisConection.hincrby(request.path, request.remote_addr, 1)
-        # self.redisConection.hincrby("ip", "foo2", 2)
-        # self.redisConection.hincrby("ip", "foo3", 4)
-        # print(self.redisConection.hget("ip", "foo1"))
-        # print(self.redisConection.hget("ip", "foo2"))
-        # print(self.redisConection.hget("ip", "foo3"))
-        # print(request.remote_addr)
-        # result = map(int,r.hvals(request.path))
-
-#        print(r.hincrby("ip", (request.path), 1))
-#        print("incremento")
-#        print(request.path)
-#        print(r.hget("ip", request.path))
-#        print("get??")
-# return 1
